@@ -1,0 +1,21 @@
+{
+  "name": "agar-io-clone-local",
+  "version": "1.0.0",
+  "description": "Agar.io clone — local and cloud deployable",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "esbuild client/js/app.js --bundle --outfile=client/js/app.bundle.js --platform=browser --target=es2017"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sat": "^0.9.0",
+    "socket.io": "^4.6.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "socket.io-client": "^4.8.3"
+  }
+}
